@@ -1,0 +1,47 @@
+@import url('https://ctalvio.github.io/Kaleidochromic/default_style.css');
+
+/* Disable Image Carousel in all page */
+.emby-scroller {
+    margin-right: 0;
+}
+.emby-scrollbuttons {
+    display: none;
+}
+.itemsContainer {
+    flex-wrap: wrap;
+}
+
+/* Hide Progress Bar */
+.itemProgressBar {
+  display: none;
+}
+
+/* Library Icon Size - Smaller */
+.overflowBackdropCard, .overflowSmallBackdropCard {
+    width: 13.0vw;
+}
+
+/* Navigation Menu Size - Smaller */
+.navMenuOption {
+    padding: .3em 0 .3em 2.4em!important;
+ }
+
+/* Disable Continue Watching */
+.verticalSection.section1.emby-scroller-container {
+    display: none;
+}
+div#resumableSection {
+    display: none;
+}
+
+/*Style backdrop*/
+.backdropImage {
+  filter: blur(0px);
+}
+
+@supports (backdrop-filter: blur(15px)) {
+  .dialog, .mainDrawer, .toast, .nowPlayingBarTop {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+}
